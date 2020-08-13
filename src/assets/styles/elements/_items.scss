@@ -1,0 +1,21 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    padding: 1.2rem 0.8rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+        margin-bottom: 1.4rem;
+    }
+
+    span {
+        font-family: 'Press Start 2P';
+        font-size: 1.4rem;
+    }
+}
