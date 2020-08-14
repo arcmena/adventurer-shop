@@ -1,0 +1,22 @@
+.cart-item {
+    height: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+
+    margin-bottom: 1rem;
+
+    img {
+        height: 100%;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
+    }
+
+    span {
+        font-family: 'Press Start 2P';
+    }
+}

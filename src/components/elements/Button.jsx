@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default ({ color, text }) => {
+export default ({ color, onClick, children }) => {
     return (
-        <button className={`retro-shadow-${color} button-${color}`}>
-            <span>{text}</span>
+        <button type="button" className={`retro-shadow-${color} button-${color}`} onClick={onClick}>
+            {children}
         </button>
     );
 };
