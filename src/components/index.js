@@ -1,3 +1,4 @@
 import Header from './elements/Header';
+import Products from './elements/Products';
 
-export { Header }
+export { Header, Products }

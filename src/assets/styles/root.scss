@@ -14,13 +14,10 @@ body,
 }
 
 body{
+    @import './main/colors';
     @import './elements/items';
     @import './effects/retro-shadow';
+    @import './main/layout';
 
-    background: #c2c2c2;
-
-    .App {
-        display: flex;
-        flex-direction: column;
-    }
+    background: $primary;
 }
