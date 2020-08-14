@@ -5,10 +5,10 @@ export default ({ items }) => {
         <>
             {items.map((item) => (
                 <div className="item retro-shadow" key={item.id}>
-                    <img src={item.image} alt="Item Image" />
+                    <img src={item.image} alt="Item" />
                     <span>{item.name}</span>
                 </div>
             ))}
         </>
     );
-}
+};

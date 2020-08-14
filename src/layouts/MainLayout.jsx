@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProductView from '../views/ProductsView';
 
-import { Header } from '../components'
+import { Header } from '../components';
 
 export default () => {
     return (
@@ -11,4 +11,4 @@ export default () => {
             <ProductView />
         </div>
     );
-}
+};

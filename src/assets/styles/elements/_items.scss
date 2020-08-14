@@ -1,18 +1,20 @@
 .items-container {
-    display: flex;
-    justify-content: center;
-    max-width: 420px;
-    flex-wrap: wrap;
-    
+    width: 420px;
+
     border: 4px solid black;
 
-    legend{
+    legend {
         padding: 0.7rem 1rem;
         font-family: 'Press Start 2P';
         font-size: 1.2rem;
     }
 
-    .item{
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -20,7 +22,7 @@
 
         padding: 1.2rem 0.8rem;
         margin: 1rem;
-    
+
         img {
             height: 5rem;
             image-rendering: pixelated;
@@ -28,7 +30,7 @@
             image-rendering: crisp-edges;
             margin-bottom: 1.4rem;
         }
-    
+
         span {
             font-family: 'Press Start 2P';
             font-size: 1.2rem;

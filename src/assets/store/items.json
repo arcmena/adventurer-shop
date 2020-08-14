@@ -23,14 +23,168 @@
             "name": "Great Sword",
             "value": 10,
             "image": "https://i.imgur.com/NOCvUHt.png"
+        },
+        {
+            "id": 5,
+            "name": "Enchanted Sword",
+            "value": 10,
+            "image": "https://i.imgur.com/ZOnt8L6.png"
+        },
+        {
+            "id": 6,
+            "name": "Spear",
+            "value": 10,
+            "image": "https://i.imgur.com/psMNSnZ.png"
+        },
+        {
+            "id": 7,
+            "name": "Axe",
+            "value": 10,
+            "image": "https://i.imgur.com/5Dj91eu.png"
+        },
+        {
+            "id": 8,
+            "name": "Battle Axe",
+            "value": 10,
+            "image": "https://i.imgur.com/82lSHyj.png"
+        },
+        {
+            "id": 9,
+            "name": "War Axe",
+            "value": 10,
+            "image": "https://i.imgur.com/EpK7Yvq.png"
+        },
+        {
+            "id": 10,
+            "name": "Large Bow",
+            "value": 10,
+            "image": "https://i.imgur.com/Bvcg2p6.png"
+        },
+        {
+            "id": 11,
+            "name": "Compound Bow",
+            "value": 10,
+            "image": "https://i.imgur.com/e0LrDtS.png"
+        },
+        {
+            "id": 12,
+            "name": "Heavy Bow",
+            "value": 10,
+            "image": "https://i.imgur.com/c2EF6PJ.png"
         }
     ],
     "magic": [
         {
-            "id": 1,
+            "id": 13,
             "name": "Simple Staff",
             "value": 4,
             "image": "https://i.imgur.com/7h8sQ2T.png"
+        },
+        {
+            "id": 14,
+            "name": "Ruby Staff",
+            "value": 4,
+            "image": "https://i.imgur.com/bR8zbGI.png"
+        },
+        {
+            "id": 15,
+            "name": "Wizard Hat",
+            "value": 4,
+            "image": "https://i.imgur.com/GUpT9Ec.png"
+        },
+        {
+            "id": 31,
+            "name": "Power Scroll",
+            "value": 4,
+            "image": "https://i.imgur.com/ezMoDN3.png"
+        }
+    ],
+    "apparel": [
+        {
+            "id": 17,
+            "name": "Leather Shield",
+            "value": 4,
+            "image": "https://i.imgur.com/CHQ6oXZ.png"
+        },
+        {
+            "id": 18,
+            "name": "Iron Shield",
+            "value": 4,
+            "image": "https://i.imgur.com/cUyCWDU.png"
+        },
+        {
+            "id": 19,
+            "name": "Simple Helmet",
+            "value": 4,
+            "image": "https://i.imgur.com/hHhg5x2.png"
+        },
+        {
+            "id": 20,
+            "name": "Ornated Helmet",
+            "value": 4,
+            "image": "https://i.imgur.com/hzSXpPH.png"
+        },
+        {
+            "id": 21,
+            "name": "Simple Armour",
+            "value": 4,
+            "image": "https://i.imgur.com/rU979C3.png"
+        },
+        {
+            "id": 22,
+            "name": "Ornated Armour",
+            "value": 4,
+            "image": "https://i.imgur.com/Liosyji.png"
+        },
+        {
+            "id": 23,
+            "name": "Simple Gloves",
+            "value": 4,
+            "image": "https://i.imgur.com/22Sk4j3.png"
+        },
+        {
+            "id": 24,
+            "name": "Ornated Gloves",
+            "value": 4,
+            "image": "https://i.imgur.com/SqB0bH2.png"
+        },
+        {
+            "id": 25,
+            "name": "Simple Greaves",
+            "value": 4,
+            "image": "https://i.imgur.com/eBOvKOx.png"
+        },
+        {
+            "id": 26,
+            "name": "Ornated Greaves",
+            "value": 4,
+            "image": "https://i.imgur.com/Ap8QZju.png"
+        }
+    ],
+    "items": [
+        {
+            "id": 27,
+            "name": "One Ring",
+            "value": 4,
+            "image": "https://i.imgur.com/mUiy2ba.png"
+        },
+        {
+            "id": 28,
+            "name": "Life Potion",
+            "value": 4,
+            "image": "https://i.imgur.com/kDY35hc.png"
+        },
+        {
+            "id": 29,
+            "name": "Mana Potion",
+            "value": 4,
+            "image": "https://i.imgur.com/lpFgmnv.png"
+        },
+        {
+            "id": 30,
+            "name": "Stamina Ring",
+            "value": 4,
+            "image": "https://i.imgur.com/o7z0a97.png"
         }
     ]
 }
