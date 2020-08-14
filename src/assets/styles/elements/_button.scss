@@ -1,0 +1,20 @@
+button {
+    cursor: pointer;
+
+    padding-top: 0.3rem;
+
+    &:focus {
+        outline: none;
+    }
+
+    transition: all 0.2s;
+
+    &:hover {
+        background: darken($blue, 10%);
+    }
+}
+
+.button-blue {
+    background: $blue;
+    color: $white;
+}

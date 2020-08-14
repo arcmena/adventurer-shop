@@ -3,5 +3,9 @@
 }
 
 .retro-shadow-red {
-    box-shadow: -3px 0 0 0 $red, 3px 0 0 0 $red, 0 -3px 0 0 $red, 0 3px 0 0 $red;
+    box-shadow: -3px 0 0 0 $darker-red, 3px 0 0 0 $darker-red, 0 -3px 0 0 $darker-red, 0 3px 0 0 $darker-red;
+}
+
+.retro-shadow-blue {
+    box-shadow: -4px 0 0 0 $darker-blue, 4px 0 0 0 $darker-blue, 0 -4px 0 0 $darker-blue, 0 4px 0 0 $darker-blue;
 }
