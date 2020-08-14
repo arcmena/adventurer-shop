@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/images/logo.png';
 import MarketCar from '../../assets/images/market_car.png';
@@ -10,8 +11,10 @@ export default () => {
             <span>Everything for your journey</span>
 
             <div>
-                <img src={MarketCar} alt="Car Icon" />
-                <span className="retro-shadow-red">0</span>
+                <Link to="/cart">
+                    <img src={MarketCar} alt="Car Icon" />
+                    <span className="retro-shadow-red">0</span>
+                </Link>
             </div>
         </header>
     );

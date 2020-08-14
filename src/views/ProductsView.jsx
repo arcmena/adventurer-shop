@@ -1,36 +1,26 @@
 import React from 'react';
 
-import { Products } from '../components';
+import { Products, Fieldset } from '../components';
 
 import { weapons, magic, apparel, items } from '../assets/store/items.json';
+
+import './ProductsView.scss';
 
 export default () => {
     return (
         <main>
-            <fieldset className="items-container">
-                <legend>Weapons</legend>
-                <div>
-                    <Products items={weapons} />
-                </div>
-            </fieldset>
-            <fieldset className="items-container">
-                <legend>Magic</legend>
-                <div>
-                    <Products items={magic} />
-                </div>
-            </fieldset>
-            <fieldset className="items-container">
-                <legend>Apparel</legend>
-                <div>
-                    <Products items={apparel} />
-                </div>
-            </fieldset>
-            <fieldset className="items-container">
-                <legend>Items</legend>
-                <div>
-                    <Products items={items} />
-                </div>
-            </fieldset>
+            <Fieldset legend="Weapons" className="items-container">
+                <Products items={weapons} />
+            </Fieldset>
+            <Fieldset legend="Magic" className="items-container">
+                <Products items={magic} />
+            </Fieldset>
+            <Fieldset legend="Apparel" className="items-container">
+                <Products items={apparel} />
+            </Fieldset>
+            <Fieldset legend="Items" className="items-container">
+                <Products items={items} />
+            </Fieldset>
         </main>
     );
 };
