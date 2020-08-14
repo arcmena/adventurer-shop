@@ -1,7 +1,36 @@
-[
-    {
-        "id": 1,
-        "name": "Sword",
-        "image": "https://i.imgur.com/XdORX5W.png"
-    }
-]
+{
+    "weapons": [
+        {
+            "id": 1,
+            "name": "Sword",
+            "value": 5,
+            "image": "https://i.imgur.com/XdORX5W.png"
+        },
+        {
+            "id": 2,
+            "name": "Katana",
+            "value": 8,
+            "image": "https://i.imgur.com/UDjnmnc.png"
+        },
+        {
+            "id": 3,
+            "name": "Scimitar",
+            "value": 7,
+            "image": "https://i.imgur.com/xXtVLAC.png"
+        },
+        {
+            "id": 4,
+            "name": "Great Sword",
+            "value": 10,
+            "image": "https://i.imgur.com/NOCvUHt.png"
+        }
+    ],
+    "magic": [
+        {
+            "id": 1,
+            "name": "Simple Staff",
+            "value": 4,
+            "image": "https://i.imgur.com/7h8sQ2T.png"
+        }
+    ]
+}

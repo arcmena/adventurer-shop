@@ -1,11 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    font-size: 80%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html,
+body,
+#root {
+    height: 100vh;
 }
 
 body{
     @import './elements/items';
+    @import './effects/retro-shadow';
 
     background: #c2c2c2;
+
+    .App {
+        display: flex;
+        flex-direction: column;
+    }
 }
