@@ -4,9 +4,11 @@ export const ItemContext = createContext();
 
 export default ({ children }) => {
     const [selectedItems, setSelectedItems] = useState([]);
+    const [total, setTotal] = useState(0);
 
     const setItems = (newItem) => {
         setSelectedItems([...selectedItems, newItem]);
+        setTotal(total + newItem.value);
     };
 
     // const checkCart = (newItem) => {
@@ -24,6 +26,7 @@ export default ({ children }) => {
     const providerValue = {
         selectedItems,
         setItems,
+        total,
     };
 
     return <ItemContext.Provider value={providerValue}>{children}</ItemContext.Provider>;

@@ -1,9 +1,13 @@
 fieldset {
     border: 4px solid $black;
 
+    padding: 1rem 0;
+
+    font-family: 'Press Start 2P';
+    text-align: center;
+
     legend {
         padding: 0.7rem 1rem;
-        font-family: 'Press Start 2P';
         font-size: 1.2rem;
         color: $black;
     }

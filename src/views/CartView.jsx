@@ -7,7 +7,7 @@ import { ItemContext } from '../config/contexts/ItemsContext';
 import './CartView.scss';
 
 export default () => {
-    const { selectedItems } = useContext(ItemContext);
+    const { selectedItems, total } = useContext(ItemContext);
 
     return (
         <main>
@@ -16,12 +16,16 @@ export default () => {
                     <CartItem item={item} key={item.id} />
                 ))}
 
-                {/* {selectedItems.lenght !==
-                    0(
+                {selectedItems.length === 0 ? (
+                    <h2 className="message">Your cart is empty</h2>
+                ) : (
+                    <div>
+                        <span>Total: {total} gold</span>
                         <Button color="blue">
                             <span>Go to checkout</span>
-                        </Button>,
-                    )} */}
+                        </Button>
+                    </div>
+                )}
             </Fieldset>
         </main>
     );

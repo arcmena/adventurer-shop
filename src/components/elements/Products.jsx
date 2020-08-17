@@ -1,21 +1,15 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 
 import { Button } from '../';
 
 import { ItemContext } from '../../config/contexts/ItemsContext';
 
 export default ({ items }) => {
-    const { selectedItems, setItems } = useContext(ItemContext);
-    const [buttonText, setButtonText] = useState('Add to cart');
+    const { setItems } = useContext(ItemContext);
 
     const onClick = (item) => {
         setItems(item);
-        setButtonText('added');
     };
-
-    useEffect(() => {
-        console.log(selectedItems);
-    }, [selectedItems]);
 
     return (
         <>
