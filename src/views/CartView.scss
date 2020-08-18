@@ -1,4 +1,6 @@
 .cart-overview {
+    @import '../assets/styles/main/colors';
+
     width: 350px;
 
     legend {
@@ -9,6 +11,7 @@
         font-family: 'Press Start 2P';
         font-size: 0.9rem;
         text-align: center;
+        color: $red;
     }
 
     span {
@@ -19,5 +22,15 @@
         margin-top: 1rem;
         height: 40px;
         padding: 0.7rem;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        height: 50px;
+        image-rendering: pixelated;
+        transform: scaleX(-1);
     }
 }

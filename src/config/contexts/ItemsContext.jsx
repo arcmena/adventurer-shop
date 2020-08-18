@@ -5,10 +5,19 @@ export const ItemContext = createContext();
 export default ({ children }) => {
     const [selectedItems, setSelectedItems] = useState([]);
     const [total, setTotal] = useState(0);
+    const [clicked, setClicked] = useState({});
+    const [modal, openModal] = useState(false);
 
     const setItems = (newItem) => {
         setSelectedItems([...selectedItems, newItem]);
         setTotal(total + newItem.value);
+        openModal(true);
+        setClicked(newItem);
+
+        setTimeout(() => {
+            openModal(false);
+            setClicked({});
+        }, 3000);
     };
 
     // const checkCart = (newItem) => {
@@ -27,6 +36,9 @@ export default ({ children }) => {
         selectedItems,
         setItems,
         total,
+        openModal,
+        modal,
+        clicked,
     };
 
     return <ItemContext.Provider value={providerValue}>{children}</ItemContext.Provider>;

@@ -1,0 +1,16 @@
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 60px;
+    width: 300px;
+    z-index: 10;
+    background: $primary;
+
+    top: 2rem;
+
+    font-family: 'Press Start 2P';
+}
