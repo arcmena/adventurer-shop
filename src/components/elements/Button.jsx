@@ -1,8 +1,12 @@
 import React from 'react';
 
-export default ({ color, onClick, children }) => {
+export default ({ red, blue, onClick, children }) => {
     return (
-        <button type="button" className={`retro-shadow-${color} button-${color}`} onClick={onClick}>
+        <button
+            type="button"
+            className={red ? `retro-shadow-red button-red` : `retro-shadow-blue button-blue`}
+            onClick={onClick}
+        >
             {children}
         </button>
     );

@@ -28,7 +28,7 @@ export default () => {
                         </Link>
                     </div>
                 ) : (
-                    <div>
+                    <div className="total">
                         <span>Total: {total} gold</span>
                         <Button color="blue">
                             <span>Go to checkout</span>

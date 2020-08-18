@@ -20,6 +20,10 @@ export default ({ children }) => {
         }, 3000);
     };
 
+    const removeItem = (id) => {
+        setSelectedItems(selectedItems.filter((item) => item.id !== id));
+    };
+
     // const checkCart = (newItem) => {
     //     // Check if it is already in the cart
     //     const check = selectedItems.findIndex((item) => item === newItem);
@@ -39,6 +43,7 @@ export default ({ children }) => {
         openModal,
         modal,
         clicked,
+        removeItem,
     };
 
     return <ItemContext.Provider value={providerValue}>{children}</ItemContext.Provider>;

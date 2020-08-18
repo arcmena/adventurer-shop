@@ -8,13 +8,22 @@ button {
     }
 
     transition: all 0.2s;
+}
+
+.button-blue {
+    background: $blue;
+    color: $white;
 
     &:hover {
         background: darken($blue, 10%);
     }
 }
 
-.button-blue {
-    background: $blue;
+.button-red {
+    background: $red;
     color: $white;
+
+    &:hover {
+        background: darken($red, 10%);
+    }
 }

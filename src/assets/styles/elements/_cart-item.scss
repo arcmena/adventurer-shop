@@ -1,23 +1,25 @@
-.cart-item {
-    height: 4rem;
+.item-container {
+    margin-bottom: 2rem;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .cart-item {
+        height: 4rem;
 
-    padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-    margin-bottom: 1rem;
+        padding: 0 1rem;
 
-    img {
-        height: 100%;
-        image-rendering: pixelated;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: crisp-edges;
-    }
+        img {
+            height: 100%;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+        }
 
-    span {
-        font-family: 'Press Start 2P';
-        font-size: 0.9rem;
+        span {
+            font-family: 'Press Start 2P';
+            font-size: 0.9rem;
+        }
     }
 }
