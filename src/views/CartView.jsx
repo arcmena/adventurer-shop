@@ -23,7 +23,7 @@ export default () => {
                     <div>
                         <h2 className="message">Your cart is empty!</h2>
                         <p>Back to the store</p>
-                        <Link>
+                        <Link to="/">
                             <img src={BackIcon} alt="back" />
                         </Link>
                     </div>
