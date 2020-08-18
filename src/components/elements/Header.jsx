@@ -11,11 +11,13 @@ export default () => {
 
     return (
         <header>
-            <img src={Logo} alt="Logotype" className="logo" />
-            <span>Everything for your journey</span>
+            <div>
+                <img src={Logo} alt="Logotype" className="logo" />
+                <span>Everything for your journey</span>
+            </div>
 
             {onTransaction ? null : (
-                <div>
+                <div className="cart">
                     <Link to="/cart">
                         <img src={MarketCar} alt="Car Icon" />
                         <span className="retro-shadow-red">{selectedItems.length}</span>

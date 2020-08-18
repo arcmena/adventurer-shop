@@ -1,9 +1,25 @@
 .items-container {
     width: 350px;
-    margin-bottom: 1.7rem;
+    margin: 1.7rem;
 
     > div {
         display: flex;
         flex-wrap: wrap;
+
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        width: 525px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 700px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 1050px;
     }
 }

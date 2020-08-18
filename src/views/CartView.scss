@@ -2,7 +2,7 @@
     @import '../assets/styles/main/colors';
 
     width: 350px;
-    padding: 1rem 0;
+    margin: 1.7rem;
 
     legend {
         text-align: center;
@@ -16,7 +16,12 @@
     }
 
     .total {
-        margin-top: 2.6rem;
+        margin: 2.6rem 0 1.5rem;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     span {
@@ -37,5 +42,17 @@
         height: 50px;
         image-rendering: pixelated;
         transform: scaleX(-1);
+    }
+
+    @media (min-width: 768px) {
+        width: 525px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 700px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 1050px;
     }
 }

@@ -13,6 +13,8 @@ header {
     justify-content: center;
     margin-top: 1.5rem;
 
+    padding-bottom: 1.2rem;
+
     width: 100%;
 
     font-family: 'Press Start 2P';
@@ -22,7 +24,13 @@ header {
         width: 350px;
     }
 
-    div {
+    > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cart {
         margin-top: 1rem;
         position: relative;
         cursor: pointer;
@@ -38,5 +46,11 @@ header {
             color: #ffffff;
             text-align: center;
         }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 2px solid #cececea4;
     }
 }

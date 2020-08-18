@@ -21,5 +21,30 @@
             font-family: 'Press Start 2P';
             font-size: 0.9rem;
         }
+
+        @media (min-width: 768px) {
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+
+    button {
+        @media (min-width: 768px) {
+            margin-right: 1rem;
+        }
+
+        @media (min-width: 1024px) {
+            margin-right: 3rem;
+        }
+
+        @media (min-width: 1440px) {
+            margin-right: 6rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
     }
 }
