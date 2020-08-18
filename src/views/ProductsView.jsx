@@ -9,10 +9,11 @@ import { ItemContext } from '../config/contexts/ItemsContext';
 import './ProductsView.scss';
 
 export default () => {
-    const { setOnTransaction } = useContext(ItemContext);
+    const { resets } = useContext(ItemContext);
 
     useEffect(() => {
-        setOnTransaction(false);
+        resets();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

@@ -33,6 +33,11 @@ export default ({ children }) => {
         setEndTransaction(true);
     };
 
+    const resets = () => {
+        setOnTransaction(false);
+        setEndTransaction(false);
+    };
+
     // const checkCart = (newItem) => {
     //     // Check if it is already in the cart
     //     const check = selectedItems.findIndex((item) => item === newItem);
@@ -57,6 +62,7 @@ export default ({ children }) => {
         setOnTransaction,
         endTransaction,
         finishTransaction,
+        resets,
     };
 
     return <ItemContext.Provider value={providerValue}>{children}</ItemContext.Provider>;
