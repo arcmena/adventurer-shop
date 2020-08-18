@@ -7,8 +7,8 @@ import { ItemContext } from '../../config/contexts/ItemsContext';
 export default ({ item }) => {
     const { removeItem } = useContext(ItemContext);
 
-    const handleClick = (id) => {
-        removeItem(id);
+    const handleClick = (item) => {
+        removeItem(item);
     };
 
     return (
@@ -18,7 +18,7 @@ export default ({ item }) => {
                 <span>{item.name}</span>
                 <span>{item.value} gold</span>
             </div>
-            <Button red onClick={() => handleClick(item.id)} className="delete">
+            <Button red onClick={() => handleClick(item)} className="delete">
                 <span>Delete</span>
             </Button>
         </div>

@@ -20,8 +20,9 @@ export default ({ children }) => {
         }, 3000);
     };
 
-    const removeItem = (id) => {
-        setSelectedItems(selectedItems.filter((item) => item.id !== id));
+    const removeItem = (removed) => {
+        setSelectedItems(selectedItems.filter((item) => item.id !== removed.id));
+        setTotal(total - removed.value);
     };
 
     // const checkCart = (newItem) => {
