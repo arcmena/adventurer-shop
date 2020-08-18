@@ -7,6 +7,8 @@ export default ({ children }) => {
     const [total, setTotal] = useState(0);
     const [clicked, setClicked] = useState({});
     const [modal, openModal] = useState(false);
+    const [onTransaction, setOnTransaction] = useState(false);
+    const [endTransaction, setEndTransaction] = useState(false);
 
     const setItems = (newItem) => {
         setSelectedItems([...selectedItems, newItem]);
@@ -23,6 +25,12 @@ export default ({ children }) => {
     const removeItem = (removed) => {
         setSelectedItems(selectedItems.filter((item) => item.id !== removed.id));
         setTotal(total - removed.value);
+    };
+
+    const finishTransaction = () => {
+        setSelectedItems([]);
+        setTotal(0);
+        setEndTransaction(true);
     };
 
     // const checkCart = (newItem) => {
@@ -45,6 +53,10 @@ export default ({ children }) => {
         modal,
         clicked,
         removeItem,
+        onTransaction,
+        setOnTransaction,
+        endTransaction,
+        finishTransaction,
     };
 
     return <ItemContext.Provider value={providerValue}>{children}</ItemContext.Provider>;

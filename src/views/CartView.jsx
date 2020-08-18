@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Fieldset, CartItem, Button } from '../components';
@@ -10,7 +10,16 @@ import BackIcon from '../assets/images/back.png';
 import './CartView.scss';
 
 export default () => {
-    const { selectedItems, total } = useContext(ItemContext);
+    const { selectedItems, total, setOnTransaction } = useContext(ItemContext);
+
+    useEffect(() => {
+        setOnTransaction(false);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    const handleCheckout = () => {
+        setOnTransaction(true);
+    };
 
     return (
         <main>
@@ -30,9 +39,11 @@ export default () => {
                 ) : (
                     <div className="total">
                         <span>Total: {total} gold</span>
-                        <Button color="blue">
-                            <span>Go to checkout</span>
-                        </Button>
+                        <Link to="/checkout" onClick={handleCheckout}>
+                            <Button color="blue">
+                                <span>Go to checkout</span>
+                            </Button>
+                        </Link>
                     </div>
                 )}
             </Fieldset>

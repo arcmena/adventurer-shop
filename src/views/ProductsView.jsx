@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 
 import { Products, Fieldset } from '../components';
 
 import { weapons, magic, apparel, items } from '../assets/store/items.json';
 
+import { ItemContext } from '../config/contexts/ItemsContext';
+
 import './ProductsView.scss';
 
 export default () => {
+    const { setOnTransaction } = useContext(ItemContext);
+
+    useEffect(() => {
+        setOnTransaction(false);
+    }, []);
+
     return (
         <main>
             <Fieldset legend="Weapons" className="items-container">

@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import ProductView from '../views/ProductsView';
 import CartView from '../views/CartView';
+import CheckoutView from '../views/CheckoutView';
 
 import { Header, Modal } from '../components';
 
@@ -20,6 +21,7 @@ export default () => {
             <Switch>
                 <Route path="/" exact component={ProductView} />
                 <Route path="/cart" component={CartView} />
+                <Route path="/checkout" component={CheckoutView} />
             </Switch>
         </div>
     );
